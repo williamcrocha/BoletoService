@@ -3,8 +3,6 @@
 **ATENÇÃO!!!** Esta é uma implementação Spring Rest API do projeto original [boleto-brasileiro-validador](https://github.com/mcrvaz/boleto-brasileiro-validator/tree/master) 
 para validar boletos. 
 
-Para acessar a documentação dos endpoints e realizar testes acesse: http://localhost:8080/swagger-ui/index.html
-
 Suporta boletos de arrecadação e boletos bancários, tanto a representação do código de barras como a linha digitável.
 
 **Todas as validações podem ser feitas com ou sem máscara.**
@@ -25,60 +23,13 @@ Suporta boletos de arrecadação e boletos bancários, tanto a representação d
 ### Bancário - Linha digitável
     23793.38128 60007.827136 95000.063305 9 75520000370000
 
-# Instalação
-  ```sh
-  npm install boleto-brasileiro-validator --save
-  ```
-
 # Como usar
-### **Para validar qualquer tipo de boleto, com ou sem máscara**
-```js
-  import { boleto } from 'boleto-brasileiro-validator';
 
-  boleto('23793.38128 60007.827136 95000.063305 9 75520000370000'); // true
-  boleto('23793381286000782713695000063305975520000370000'); // true
-  boleto('836200000005 667800481000 180975657313 001589636081'); // true
-  boleto('536200000005 667800481000 180975657313 001589636081'); // false
-  boleto('001933737000000144816060680935031'); // false
-```
-### **Para validar boletos de arrecadação (luz, água, etc.)**
+Você pode usar a IDE de sua preferência para executar o projeto ou através do terminal. Para executar via terminal certifique-se de estar usando o java na versão 17 e execute o seguinte comando: **mvn spring-boot:run** 
 
-```js
-  import {
-    boletoArrecadacao, // valida qualquer tipo de boleto de arrecadação
-    boletoArrecadacaoCodigoBarras, // valida representação númerica do código de barras
-    boletoArrecadacaoLinhaDigitavel, // valida linha digitável do boleto
-  } from 'boleto-brasileiro-validator';
+Com a aplicação em execução acesse o seguinte link no browser: http://localhost:8080/swagger-ui/index.html
 
-  boletoArrecadacao('836200000005 667800481000 180975657313 001589636081'); // true
-  boletoArrecadacaoCodigoBarras('84890000000404201622018060519042958603411122'); // true
-  boletoArrecadacaoLinhaDigitavel('85890000460-9 52460179160-5 60759305086-5 83148300001-0'); // true
-```
-
-### **Para validar boletos bancários**
-```js
-  import {
-    boletoBancario, // valida qualquer tipo de boleto bancário
-    boletoBancarioCodigoBarras, // valida representação númerica do código de barras
-    boletoBancarioLinhaDigitavel, // valida linha digitável do boleto
-  } from 'boleto-brasileiro-validator';
-
-  boletoBancario('23793.38128 60007.827136 95000.063305 9 75520000370000'); // true
-  boletoBancarioCodigoBarras('00193373700000001000500940144816060680935031'); // true
-  boletoBancarioLinhaDigitavel('23793381286000782713695000063305975520000370000'); // true
-
-```
-### **Observação**
-**Por padrão, a validação individual de cada bloco não é realizada.**
-
-Caso esse comportamento seja necessário, as seguintes funções aceitam um parâmetro adicional para habilitar a validação:
-```js
-  boleto('23793.38128 60007.827136 95000.063305 9 75520000370000', true);
-  boletoBancario('23793381286000782713695000063305975520000370000', true);
-  boletoBancarioLinhaDigitavel('23793381286000782713695000063305975520000370000', true);
-  boletoArrecadacao('836200000005667800481000180975657313001589636081', true);
-  boletoArrecadacaoLinhaDigitavel('836200000005667800481000180975657313001589636081', true);
-```
+No formulário disponibilizado é possível executar testes acessando diretamente cada endpoint do projeto.
 
 # Regras de Validação
 Regras para validação de boletos bancários: [Especificações Técnicas
@@ -88,5 +39,6 @@ do Banco do Brasil](http://www.bb.com.br/docs/pub/emp/empl/dwn/Doc5175Bloqueto.p
 Regras para validação de boletos de arrecadação: [FEBRABAN - "Layout" Padrão de Arrecadação/Recebimento
 com Utilização do Código de Barras](https://cmsportal.febraban.org.br/Arquivos/documentos/PDF/Layout%20-%20C%C3%B3digo%20de%20Barras%20ATUALIZADO.pdf)
 
-# Licença
-This project is licensed under the MIT License - see the LICENSE.md file for details
+# Mais detalhes?
+
+Acesse o projeto original em Javascript no link [boleto-brasileiro-validador](https://github.com/mcrvaz/boleto-brasileiro-validator/tree/master) 
