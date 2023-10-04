@@ -1,4 +1,4 @@
-# validadorBoleto
+# BoletoService
 
 **ATENÇÃO!!!** Esta é uma implementação Spring Rest API do projeto original [boleto-brasileiro-validador](https://github.com/mcrvaz/boleto-brasileiro-validator/tree/master) 
 para validar boletos. 
