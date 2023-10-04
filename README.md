@@ -1,9 +1,8 @@
 # BoletoService
 
 **ATENÇÃO!!!** Esta é uma implementação Spring Rest API do projeto original [boleto-brasileiro-validador](https://github.com/mcrvaz/boleto-brasileiro-validator/tree/master) 
-para validar boletos. 
 
-Suporta boletos de arrecadação e boletos bancários, tanto a representação do código de barras como a linha digitável.
+Rest API para realizar validação da linha digitável e da representação do código de barras de boletos de arrecadação e boletos bancários. 
 
 **Todas as validações podem ser feitas com ou sem máscara.**
 
