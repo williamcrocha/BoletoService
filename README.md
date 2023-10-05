@@ -27,6 +27,7 @@ Rest API para realizar validação da linha digitável e da representação do c
 Você pode usar a IDE de sua preferência para executar o projeto ou através do terminal. Para executar via terminal certifique-se de estar usando o java na versão 17 e execute o seguinte comando: **mvn spring-boot:run** 
 
 Com a aplicação em execução acesse o seguinte link no browser: http://localhost:8080/swagger-ui/index.html
+
 ![Represetação visual do formulário de testes](https://i.imgur.com/RWbcT2Q.jpg)
 
 No formulário disponibilizado é possível executar testes acessando diretamente cada endpoint do projeto.
