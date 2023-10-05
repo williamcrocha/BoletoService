@@ -38,7 +38,7 @@ para Confecção de Boleto de Cobrança
 do Banco do Brasil](http://www.bb.com.br/docs/pub/emp/empl/dwn/Doc5175Bloqueto.pdf)
 
 Regras para validação de boletos de arrecadação: [FEBRABAN - "Layout" Padrão de Arrecadação/Recebimento
-com Utilização do Código de Barras](https://cmsportal.febraban.org.br/Arquivos/documentos/PDF/Layout%20-%20C%C3%B3digo%20de%20Barras%20ATUALIZADO.pdf)
+com Utilização do Código de Barras](https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Layout%20-%20C%C3%B3digo%20de%20Barras%20ATUALIZADO.pdf)
 
 # Mais detalhes?
 
